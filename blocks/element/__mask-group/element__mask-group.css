@@ -1,0 +1,9 @@
+.element__mask-group{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
