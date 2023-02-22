@@ -6,3 +6,7 @@
 .element__group:hover{
     opacity: 0.5;
 }
+
+.element__group:active{
+    background-image: url(../../../images/setLike.svg);
+}
