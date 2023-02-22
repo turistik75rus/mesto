@@ -8,3 +8,7 @@
     justify-content: center;
     margin-left: 18px;
 }
+
+.profile__edit-button:hover{
+    opacity: 0.6;
+}

@@ -1,14 +1,12 @@
 let content = document.querySelector('.content');
 let editButton = content.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
-
-editButton.addEventListener('click', function(){
-    popup.classList.add('popup_opend');
-});
-
-
-let name = document.querySelector('.profile__name')
-let title = document.querySelector('.profile__title')
+let close = document.querySelector('.popup__close-icon');
+let save = document.querySelector('.form__submit-button');
+let name = document.querySelector('.profile__name');
+let title = document.querySelector('.profile__title');
+let logo = document.querySelector('.header__logo');
+let like = document.querySelector('.element__group');
 
 // Находим форму в DOM
 let formElement = document.querySelector('.form');
@@ -16,9 +14,39 @@ let formElement = document.querySelector('.form');
 let nameInput = formElement.querySelector('#name');
 let jobInput = formElement.querySelector('#title');
 
+like.addEventListener('click', function(){
+    like.setAttribute('src', './images/setLike.svg')
+});
 
-nameInput.setAttribute('value', name.textContent);
-jobInput.setAttribute('value', title.textContent);
+
+logo.addEventListener('mouseover', function(){
+    logo.setAttribute('src', './images/logoBlack.svg');
+});
+logo.addEventListener('mouseout', function(){
+    logo.setAttribute('src', './images/logo.svg');
+});
+
+editButton.addEventListener('click', function(){
+    nameInput.setAttribute('value', name.textContent);
+    jobInput.setAttribute('value', title.textContent);
+    popup.classList.add('popup_opend');
+});
+
+close.addEventListener('click', function(){
+    popup.classList.remove('popup_opend');
+});
+
+save.addEventListener('click', function(){
+    name.innerHTML = nameInput.value + `<a class="profile__edit-button" href="#"><img src="./images/pencil.svg" alt=""></a>`;
+    title.textContent = jobInput.value;
+
+    popup.classList.remove('popup_opend');
+});
+
+
+
+
+
 
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет

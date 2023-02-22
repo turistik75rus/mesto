@@ -3,6 +3,8 @@
     height: 100vh;
     width: 100%;
     background: rgba(0,0,0,0.5);
-    padding-top: 10%;
+    padding-top: 155px;
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
