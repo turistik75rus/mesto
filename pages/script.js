@@ -6,7 +6,7 @@ let save = document.querySelector('.form__submit-button');
 let name = document.querySelector('.profile__name');
 let title = document.querySelector('.profile__title');
 let logo = document.querySelector('.header__logo');
-let like = document.querySelector('.element__group');
+let like = document.querySelectorAll('.element__group');
 
 // Находим форму в DOM
 let formElement = document.querySelector('.form');
@@ -14,8 +14,8 @@ let formElement = document.querySelector('.form');
 let nameInput = formElement.querySelector('#name');
 let jobInput = formElement.querySelector('#title');
 
-like.addEventListener('click', function(){
-    like.setAttribute('src', './images/setLike.svg')
+like[0].addEventListener('click', function(){
+    like[0].setAttribute('src', './images/setLike.svg');
 });
 
 
