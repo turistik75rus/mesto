@@ -1,5 +1,4 @@
-let content = document.querySelector('.content');
-let editButton = content.querySelector('.profile__edit-button');
+let editButton = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
 let close = document.querySelector('.popup__close-icon');
 let save = document.querySelector('.form__submit-button');
@@ -11,40 +10,19 @@ let like = document.querySelectorAll('.element__group');
 // Находим форму в DOM
 let formElement = document.querySelector('.form');
 // Находим поля формы в DOM
-let nameInput = formElement.querySelector('#name');
-let jobInput = formElement.querySelector('#title');
+let nameInput = formElement.querySelector('.form__input_id_name');
+let jobInput = formElement.querySelector('.form__input_id_title');
 
-like[0].addEventListener('click', function(){
-    like[0].setAttribute('src', './images/setLike.svg');
-});
-
-
-logo.addEventListener('mouseover', function(){
-    logo.setAttribute('src', './images/logoBlack.svg');
-});
-logo.addEventListener('mouseout', function(){
-    logo.setAttribute('src', './images/logo.svg');
-});
 
 editButton.addEventListener('click', function(){
-    nameInput.setAttribute('value', name.textContent);
-    jobInput.setAttribute('value', title.textContent);
-    popup.classList.add('popup_opend');
+    nameInput.value = name.textContent
+    jobInput.value = title.textContent
+    popup.classList.add('popup_opened');
 });
 
 close.addEventListener('click', function(){
-    popup.classList.remove('popup_opend');
+    popup.classList.remove('popup_opened');
 });
-
-save.addEventListener('click', function(){
-    name.innerHTML = nameInput.value + `<a class="profile__edit-button" href="#"><img src="./images/pencil.svg" alt=""></a>`;
-    title.textContent = jobInput.value;
-
-    popup.classList.remove('popup_opend');
-});
-
-
-
 
 
 
@@ -55,7 +33,8 @@ function handleFormSubmit (evt) {
                                                 // Так мы можем определить свою логику отправки.
                                                 // О том, как это делать, расскажем позже.
 
-    // Получите значение полей jobInput и nameInput из свойства value
+    name.textContent = nameInput.value;
+    title.textContent = jobInput.value;
 
     // Выберите элементы, куда должны быть вставлены значения полей
 
@@ -64,6 +43,6 @@ function handleFormSubmit (evt) {
 
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
-formElement.addEventListener('submit', handleFormSubmit); 
+save.addEventListener('submit', handleFormSubmit); 
 
 

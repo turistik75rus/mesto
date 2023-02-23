@@ -1,6 +1,14 @@
 .element__group{
     margin-right: 5px;
     cursor: pointer;
+    background-image: url(../../../images/like.svg);
+    background-color: transparent;
+    background-repeat: round;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    width: 22px;
+    height: 19px;
 }
 
 .element__group:hover{

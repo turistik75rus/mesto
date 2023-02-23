@@ -1,156 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
+
 <body class="page">
 
-    <section class="popup">
-      <img class="popup__close-icon" src="./images/close.svg" alt="закрывайте">
-      <div class="popup__container">
-        
-        <forms class="form" action="" method="post">
-          <p class="form__heading">Редактировать профиль</p>
-          <input class="form__input" type="text" id="name" value="s">
-          <input class="form__input" type="text" id="title" value="p">
-          <input class="form__submit-button" type="submit" value="Сохранить">
-        </forms>
+  <header class="header">
+
+    <img class="header__logo" src="./images/logo.svg" alt="mesto - россия">
+
+  </header>
+
+  <main class="content">
+
+    <section class="profile">
+
+      <img src="./images/member.jpg" alt="" class="profile__avatar">
+
+      <div class="profile__info">
+
+        <h1 class="profile__name">Жак-Ив Кусто<a class="profile__edit-button" href="#"><img src="./images/pencil.svg" alt="фотография профиля Жак-Ив Кусто"></a></h1>
+        <p class="profile__title">Исследователь океана</p>
+
       </div>
+
+      <a href="#" class="profile__add-button"><img src="./images/plus.svg" alt="Кнопка по добавлению ваших фотографий в профиль. Не стесняйтесь, покажите миру как вы его видете."></a>
+
     </section>
 
-    <header class="header">
+    <section class="elements">
 
-      <img class="header__logo" src="./images/logo.svg" alt="mesto - россия">
+      <article class="element">
 
-    </header>
-
-    <main class="content">
+        <img src="./images/tower.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
 
 
-      <section class="profile">
-        <img src="./images/member.jpg" alt="" class="profile__avatar">
-        <div class="profile__info">
-          <h1 class="profile__name">Жак-Ив Кусто<a class="profile__edit-button" href="#"><img src="./images/pencil.svg" alt=""></a></h1>
-          <p class="profile__title">Исследователь океана</p>  
+        <div class="element__container">
+
+          <h2 class="element__parapraph">Карачаевск</h2>
+
+          <button class="element__group"></button>
+
         </div>
-        
-          <a href="#" class="profile__add-button"><img src="./images/plus.svg" alt=""></a>
-        
-      </section>
-      
-      <section class="elements">
+
+      </article>
+
+      <article class="element">
+
+        <img src="./images/sky.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
 
 
-        <article class="element">
+        <div class="element__container">
 
-          <img src="./images/tower.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
+          <h2 class="element__parapraph">Гора Эльбрус</h2>
 
+          <button class="element__group"></button>
 
-          <div class="element__container">
+        </div>
 
-            <p class="element__parapraph">Карачаевск</p>
+      </article>
 
-            <img src="./images/like.svg" alt="если понравилось - нажми )" class="element__group">
-            
-          </div>
-          
+      <article class="element">
 
-        </article>
-
-        <article class="element">
-
-          <img src="./images/sky.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
+        <img src="./images/mountains.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
 
 
-          <div class="element__container">
+        <div class="element__container">
 
-            <p class="element__parapraph">Гора Эльбрус</p>
+          <h2 class="element__parapraph">Домбай</h2>
 
-            <img src="./images/like.svg" alt="если понравилось - нажми )" class="element__group">
-            
-          </div>
-          
+          <button class="element__group"></button>
 
-        </article>
+        </div>
 
-        <article class="element">
+      </article>
 
-          <img src="./images/mountains.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
+      <article class="element">
 
-
-          <div class="element__container">
-
-            <p class="element__parapraph">Домбай</p>
-
-            <img src="./images/like.svg" alt="если понравилось - нажми )" class="element__group">
-            
-          </div>
-          
-
-        </article>
-
-        <article class="element">
-
-          <img src="./images/sky.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
+        <img src="./images/sky.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
 
 
-          <div class="element__container">
+        <div class="element__container">
 
-            <p class="element__parapraph">Горв Эльбрус</p>
+          <h2 class="element__parapraph">Горв Эльбрус</h2>
 
-            <img src="./images/like.svg" alt="если понравилось - нажми )" class="element__group">
-            
-          </div>
-          
+          <button class="element__group"></button>
 
-        </article>
+        </div>
 
-        <article class="element">
+      </article>
 
-          <img src="./images/mountains.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
+      <article class="element">
 
-
-          <div class="element__container">
-
-            <p class="element__parapraph">Домбай</p>
-
-            <img src="./images/like.svg" alt="если понравилось - нажми )" class="element__group">
-            
-          </div>
-          
-
-        </article>
-
-        <article class="element">
-
-          <img src="./images/tower.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
+        <img src="./images/mountains.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
 
 
-          <div class="element__container">
+        <div class="element__container">
 
-            <p class="element__parapraph">Карачаево-Черкессия</p>
+          <h2 class="element__parapraph">Домбай</h2>
 
-            <img src="./images/like.svg" alt="если понравилось - нажми )" class="element__group">
-            
-          </div>
-          
+          <button class="element__group"></button>
 
-        </article>
+        </div>
 
-      </section>
+      </article>
+
+      <article class="element">
+
+        <img src="./images/tower.jpg" alt="личные фотографии сделанные Жак-Ив Кусто" class="element__mask-group">
 
 
-    </main>
+        <div class="element__container">
 
-    <footer class="footer">
-      
-      <p class="footer__paragraph">© 2023. Mesto Russia</p>
+          <h2 class="element__parapraph">Карачаево-Черкессия</h2>
 
-    </footer>
+          <button class="element__group"></button>
 
-<script src="./pages/script.js"></script>
+        </div>
+
+      </article>
+
+
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+
+    <p class="footer__paragraph">© 2023. Mesto Russia</p>
+
+  </footer>
+
+  <section class="popup">
+
+    
+
+    <div class="popup__container">
+
+      <button class="popup__close-icon" type="button"></button>
+
+      <form class="form" name="profileInfo" action="" method="post">
+
+        <h2 class="form__heading">Редактировать профиль</h2>
+
+        <input class="form__input form__input_id_name" type="text" id="name" value="">
+        <input class="form__input form__input_id_title" type="text" id="title" value="">
+
+        <button class="form__submit-button" type="submit">Сохранить</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
