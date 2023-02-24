@@ -8,9 +8,9 @@
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
-    margin-top: 18px;
     padding: 0;
     cursor: pointer;
+    margin-top: 18px;
 }
 
 .form__submit-button:hover{

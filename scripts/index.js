@@ -4,8 +4,6 @@ let close = document.querySelector('.popup__close-icon');
 let save = document.querySelector('.form__submit-button');
 let name = document.querySelector('.profile__name');
 let title = document.querySelector('.profile__title');
-let logo = document.querySelector('.header__logo');
-let like = document.querySelectorAll('.element__group');
 
 // Находим форму в DOM
 let formElement = document.querySelector('.form');
@@ -14,17 +12,20 @@ let nameInput = formElement.querySelector('.form__input_id_name');
 let jobInput = formElement.querySelector('.form__input_id_title');
 
 
-editButton.addEventListener('click', function(){
+
+function handleOpen(){
     nameInput.value = name.textContent
     jobInput.value = title.textContent
     popup.classList.add('popup_opened');
-});
+};
 
-close.addEventListener('click', function(){
+function handleClose(){
     popup.classList.remove('popup_opened');
-});
+}
 
+editButton.addEventListener('click', handleOpen);
 
+close.addEventListener('click', handleClose);
 
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет
@@ -35,7 +36,7 @@ function handleFormSubmit (evt) {
 
     name.textContent = nameInput.value;
     title.textContent = jobInput.value;
-
+    popup.classList.remove('popup_opened');
     // Выберите элементы, куда должны быть вставлены значения полей
 
     // Вставьте новые значения с помощью textContent
