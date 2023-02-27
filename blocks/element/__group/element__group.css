@@ -7,8 +7,9 @@
     border: none;
     overflow: hidden;
     outline: none;
-    width: 22px;
-    height: 19px;
+    min-width: 22px;
+    min-height: 19px;
+    padding: 0;
 }
 
 .element__group:hover{

@@ -7,7 +7,7 @@
     width: 330px;
     margin-left: 36px;
     margin-top: 34px;
-    margin-bottom: 54px;
+    margin-bottom: 44px;
 }
 
 @media screen and (max-width: 767px) {
@@ -16,7 +16,7 @@
         line-height: 22px;
         width: 238px;
         margin: 0 auto;
-        margin-bottom: 75px;
+        margin-bottom: 70px;
         margin-top: 25px;
     }
 }

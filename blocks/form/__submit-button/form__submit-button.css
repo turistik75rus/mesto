@@ -10,7 +10,7 @@
     color: #FFFFFF;
     padding: 0;
     cursor: pointer;
-    margin-top: 18px;
+    margin-top: 22px;
 }
 
 .form__submit-button:hover{
@@ -21,6 +21,8 @@
     .form__submit-button{
         width: 238px;
         height: 46px;
-        margin-top: 15px;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 17px;
     }
 }

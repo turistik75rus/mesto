@@ -1,7 +1,7 @@
 .profile__container{
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -10,6 +10,5 @@
 @media screen and (max-width: 767px) {
     .profile__container{
         text-align: center;
-        margin-bottom: 14px;
     }
 }

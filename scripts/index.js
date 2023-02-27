@@ -1,7 +1,6 @@
 let editButton = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
 let close = document.querySelector('.popup__close-icon');
-let save = document.querySelector('.form__submit-button');
 let name = document.querySelector('.profile__name');
 let title = document.querySelector('.profile__title');
 
@@ -34,16 +33,18 @@ function handleFormSubmit (evt) {
                                                 // Так мы можем определить свою логику отправки.
                                                 // О том, как это делать, расскажем позже.
 
+
+                                          
     name.textContent = nameInput.value;
     title.textContent = jobInput.value;
-    popup.classList.remove('popup_opened');
-    // Выберите элементы, куда должны быть вставлены значения полей
+    handleClose();
 
+    
     // Вставьте новые значения с помощью textContent
-}
+};
 
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
-save.addEventListener('submit', handleFormSubmit); 
+formElement.addEventListener('submit', handleFormSubmit); 
 
 
