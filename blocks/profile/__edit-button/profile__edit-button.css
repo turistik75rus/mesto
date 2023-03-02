@@ -10,10 +10,12 @@
     justify-content: center;
     margin-left: 18px;
     background-color: transparent;
-    background-repeat: round;
+    background-repeat: no-repeat;
     overflow: hidden;
     outline: none;
     cursor: pointer;
+    background-image: url('../../../images/pencil.svg');
+    background-position: center;
 }
 
 .profile__edit-button:hover{
@@ -28,7 +30,8 @@
 
 @media screen and (max-width: 767px) {
     .profile__edit-button{
-        max-width: 18px;
+        min-width: 18px;
         height: 18px;
+        background-image: url('../../../images/pencils.svg');
     }
 }
